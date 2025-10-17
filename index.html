@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Rohit Pineti</title>
+    <meta name="description" content="Personal portfolio of Rohit Pineti: web developer skilled in Java, Python, C, and frontend technologies." />
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230ea5e9'/%3E%3Ctext x='50' y='58' font-size='48' text-anchor='middle' fill='white' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">Rohit Pineti</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+            <span class="sun" aria-hidden="true">☀️</span>
+            <span class="moon" aria-hidden="true">🌙</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container grid-2">
+          <div>
+            <h1>Hello, I'm <span class="accent">Rohit Pineti</span></h1>
+            <p class="lead">I build creative, powerful, and user-friendly web applications.</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <img src="https://picsum.photos/seed/profile/600/600" alt="Portrait of Rohit Pineti" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I'm passionate about web development and love exploring ideas for creative and useful websites.
+            I enjoy figuring out what technologies and software can make a website more powerful and user-friendly.
+          </p>
+          <p>
+            Currently, I'm skilled in Java, Python, and C, and I'm continuously learning to improve my development and problem-solving skills.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skills">
+            <li>Web Development</li>
+            <li>Java Programming</li>
+            <li>Python Programming</li>
+            <li>C Programming</li>
+            <li>Frontend Design (HTML, CSS, JS)</li>
+            <li>Database Management (MongoDB, MySQL)</li>
+            <li>Problem Solving</li>
+            <li>Project Planning</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <article class="card">
+              <img src="https://picsum.photos/seed/medical/800/500" alt="Screenshot of Medical Storage System" loading="lazy" />
+              <div class="card-body">
+                <h3>Medical Storage System Website</h3>
+                <p>A web app to store and manage patient medical records securely and efficiently.</p>
+                <div class="card-actions">
+                  <a class="btn small" href="https://github.com/pinetirohit" target="_blank" rel="noopener">View Project</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/career/800/500" alt="Screenshot of Career Advisor Website" loading="lazy" />
+              <div class="card-body">
+                <h3>Career Advisor Website</h3>
+                <p>A platform that provides personalized career and education advice for students based on interests and goals.</p>
+                <div class="card-actions">
+                  <a class="btn small" href="https://github.com/pinetirohit" target="_blank" rel="noopener">View Project</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/quiz/800/500" alt="Screenshot of Anti-Cheating Quiz Website" loading="lazy" />
+              <div class="card-body">
+                <h3>Anti-Cheating Quiz Website</h3>
+                <p>A quiz platform with features to prevent cheating and ensure fair assessments.</p>
+                <div class="card-actions">
+                  <a class="btn small" href="https://github.com/pinetirohit" target="_blank" rel="noopener">View Project</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Have a question or want to work together? Send a message:</p>
+          <!-- Netlify Forms: name, hidden form-name input, data-netlify, honeypot, success redirect -->
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="contact-form">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <div class="grid-2">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" required />
+              </label>
+            </div>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Rohit Pineti. All rights reserved.</p>
+        <div class="socials">
+          <a href="https://github.com/pinetirohit" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://linkedin.com/in/pineti-rohit-18286537b" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:pinetirohit2006@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>

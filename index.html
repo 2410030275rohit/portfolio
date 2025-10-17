@@ -11,10 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Particles.js for animated background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230ea5e9'/%3E%3Ctext x='50' y='58' font-size='48' text-anchor='middle' fill='white' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E" />
   </head>
   <body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Cursor Trail -->
+    <div class="cursor-trail"></div>
+    
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
@@ -37,7 +45,9 @@
         <div class="container grid-2">
           <div>
             <h1>Hello, I'm <span class="accent">Rohit Pineti</span></h1>
-            <p class="lead">I build creative, powerful, and user-friendly web applications.</p>
+            <p class="lead">
+              <span id="typed-text"></span><span class="cursor">|</span>
+            </p>
             <p style="color: var(--muted); margin-bottom: 20px;">
               <i class="fas fa-code" style="color: var(--accent);"></i> Web Developer 
               <span style="margin: 0 8px;">•</span>
@@ -59,6 +69,31 @@
       <section id="about" class="section">
         <div class="container">
           <h2>About</h2>
+          
+          <!-- Stats Cards -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+              <div class="stat-number" data-target="15">0</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-code"></i></div>
+              <div class="stat-number" data-target="8">0</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-label">Hackathons</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-coffee"></i></div>
+              <div class="stat-number" data-target="500">0</div>
+              <div class="stat-label">Cups of Coffee</div>
+            </div>
+          </div>
+
           <p>
             I'm passionate about web development and love exploring ideas for creative and useful websites.
             I enjoy figuring out what technologies and software can make a website more powerful and user-friendly.
@@ -94,6 +129,12 @@
               <div class="card-body">
                 <h3>Medical Storage System Website</h3>
                 <p>A web app to store and manage patient medical records securely and efficiently.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
+                  <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+                  <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+                  <span class="tech-badge"><i class="fas fa-database"></i> MongoDB</span>
+                </div>
                 <div class="card-actions">
                   <a class="btn small" href="https://github.com/pinetirohit" target="_blank" rel="noopener">
                     <i class="fas fa-external-link-alt"></i> View Project
@@ -106,6 +147,12 @@
               <div class="card-body">
                 <h3>Career Advisor Website</h3>
                 <p>A platform that provides personalized career and education advice for students based on interests and goals.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                  <span class="tech-badge"><i class="fas fa-brain"></i> ML</span>
+                  <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+                  <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
+                </div>
                 <div class="card-actions">
                   <a class="btn small" href="https://github.com/pinetirohit" target="_blank" rel="noopener">
                     <i class="fas fa-external-link-alt"></i> View Project
@@ -118,6 +165,12 @@
               <div class="card-body">
                 <h3>Anti-Cheating Quiz Website</h3>
                 <p>A quiz platform with features to prevent cheating and ensure fair assessments.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge"><i class="fab fa-java"></i> Java</span>
+                  <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
+                  <span class="tech-badge"><i class="fas fa-shield-alt"></i> Security</span>
+                  <span class="tech-badge"><i class="fas fa-video"></i> WebRTC</span>
+                </div>
                 <div class="card-actions">
                   <a class="btn small" href="https://github.com/pinetirohit" target="_blank" rel="noopener">
                     <i class="fas fa-external-link-alt"></i> View Project

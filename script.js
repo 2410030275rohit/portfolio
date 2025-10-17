@@ -135,7 +135,7 @@
         element.textContent = Math.floor(current);
         requestAnimationFrame(updateCounter);
       } else {
-        element.textContent = target + (target === 500 ? '+' : '');
+        element.textContent = target + (target === 100 ? '+' : '');
       }
     };
     updateCounter();
